@@ -133,9 +133,9 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-
+ 
             {/* Copyrights note */}
-            <div className="text-gray-400 text-sm mr-4">&copy; Cruip.com. All rights reserved.</div>
+            <div className="text-gray-400 text-sm mr-4">&copy; {new Date().getFullYear()} All rights reserved.</div>
 
           </div>
 
