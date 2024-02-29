@@ -1,8 +1,10 @@
 import Link from "next/link";
 import MobileMenu from "./mobile-menu";
 import Image from "next/image";
-
-export default function Header() {
+interface handleClick {
+  handleClick: (sectionId: string) => void;
+}
+export default function Header({handleClick }:handleClick) {
   return (
     <header className="absolute w-full z-30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -20,18 +22,23 @@ export default function Header() {
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               
-              <li>
-                <p className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out">
+              {/* <li>
+                <p className="font-medium text-purple-600 cursor-pointer hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out">
+                  Home
+                </p>
+              </li> */}
+              <li onClick={() => handleClick("missionVision")}>
+                <p className="font-medium text-purple-600 cursor-pointer hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out">
                   Mission & Vission
                 </p>
               </li>
-              <li>
-                <p className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out">
-                  IT Solution
+              <li onClick={() => handleClick("solutionservices")}>
+                <p className="font-medium text-purple-600 cursor-pointer hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out">
+                  IT Solution/Services
                 </p>
               </li>
-              <li>
-                <p className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out">
+              <li onClick={() => handleClick("contact")}>
+                <p className="font-medium text-purple-600 cursor-pointer hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out">
                   Contact
                 </p>
               </li>
