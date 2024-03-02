@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { handleClick } from "./header";
 
-export default function MobileMenu() {
+export default function MobileMenu({ handleClick }: handleClick) {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false);
 
   const trigger = useRef<HTMLButtonElement>(null);
@@ -73,17 +74,17 @@ export default function MobileMenu() {
               Home
             </p>
           </li> */}
-          <li>
+          <li onClick={() => handleClick("missionVision")}>
             <p className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center">
               Mission & Vission
             </p>
           </li>
-          <li>
+          <li onClick={() => handleClick("solutionservices")}>
             <p className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center">
               IT Solution/Services
             </p>
           </li>
-          <li>
+          <li onClick={() => handleClick("contact")}>
             <p className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center">
               Contact
             </p>

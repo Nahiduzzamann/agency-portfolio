@@ -1,7 +1,7 @@
 import Link from "next/link";
 import MobileMenu from "./mobile-menu";
 import Image from "next/image";
-interface handleClick {
+export interface handleClick {
   handleClick: (sectionId: string) => void;
 }
 export default function Header({handleClick }:handleClick) {
@@ -45,7 +45,7 @@ export default function Header({handleClick }:handleClick) {
             </ul>
           </nav>
 
-          <MobileMenu />
+          <MobileMenu handleClick={handleClick}/>
         </div>
       </div>
     </header>
