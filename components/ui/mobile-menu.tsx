@@ -75,17 +75,17 @@ export default function MobileMenu({ handleClick }: handleClick) {
             </p>
           </li> */}
           <li onClick={() => handleClick("missionVision")}>
-            <p className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center">
+            <p className="flex font-medium  cursor-pointer w-full text-purple-600 hover:text-gray-200 py-2 justify-center">
               Mission & Vission
             </p>
           </li>
           <li onClick={() => handleClick("solutionservices")}>
-            <p className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center">
+            <p className="flex font-medium  cursor-pointer w-full text-purple-600 hover:text-gray-200 py-2 justify-center">
               IT Solution/Services
             </p>
           </li>
           <li onClick={() => handleClick("contact")}>
-            <p className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center">
+            <p className="flex font-medium  cursor-pointer w-full text-purple-600 hover:text-gray-200 py-2 justify-center">
               Contact
             </p>
           </li>

@@ -56,12 +56,12 @@ export default function Testimonials() {
                 advance their skills.
               </blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">John Doe</cite> -{" "}
+                <cite className="text-gray-200 not-italic">Sabrina Yasmin</cite> -{" "}
                 <a
                   className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"
                   href="#0"
                 >
-                  CEO, Tech Solutions Inc.
+                  Tech Solutions Inc.
                 </a>
               </div>
             </div>
@@ -97,7 +97,7 @@ export default function Testimonials() {
                 from them.
               </blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">Jane Smith</cite> -{" "}
+                <cite className="text-gray-200 not-italic">Karli Smith</cite> -{" "}
                 <a
                   className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"
                   href="#0"
@@ -146,7 +146,7 @@ export default function Testimonials() {
                   className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"
                   href="#0"
                 >
-                  Founder, Tech Innovators Ltd.
+                  Tech Innovators Ltd.
                 </a>
               </div>
             </div>

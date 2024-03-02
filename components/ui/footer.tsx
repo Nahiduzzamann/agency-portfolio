@@ -175,7 +175,7 @@ export default function Footer() {
             {/* Copyrights note */}
             <div className="text-gray-400 text-sm mr-4">
               &copy; {new Date().getFullYear()} All rights reserved. SJS
-              Freelancing & It Institute
+              Freelancing & It Institute.
             </div>
           </div>
         </div>

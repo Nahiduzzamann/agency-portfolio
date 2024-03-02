@@ -33,7 +33,7 @@ export default function Newsletter(): JSX.Element {
 
     if(formData.contact.length <6){
       setSubmitting(false);
-      return alert('Please add valid phone number')
+      return alert('Please add valid Phone number or Email address')
     }
     // Send email using EmailJS
     emailjs.sendForm('service_e8nnozm', 'template_btvtndg', e.currentTarget, 'Rya_mOmzg7LDH5PYA')

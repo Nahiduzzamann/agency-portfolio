@@ -29,10 +29,11 @@ export default function Home() {
       </div>
 
       <Zigzag />
-      <Testimonials />
       <div id="missionVision" ref={sectionRef}>
         <MissionVision />
       </div>
+      <Testimonials />
+
       <div id="contact" ref={sectionRef}>
         <Newsletter />
       </div>
