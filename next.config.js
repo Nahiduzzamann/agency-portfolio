@@ -4,6 +4,7 @@ const nextConfig = {
     unoptimized: true,
   },
   distDir: "out",
+  output:"export"
 };
 
 module.exports = nextConfig;
